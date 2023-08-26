@@ -1,15 +1,11 @@
 ---
+import Base from "../layouts/Base.astro";
+import MainButton from "../components/MainButton.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astrao</title>
-	</head>
-	<body>
-		<h1><a href="./about">Astros</a></h1>
-	</body>
-</html>
+<Base>
+  <MainButton color="blue">Games</MainButton>
+  <MainButton color="green">Apps</MainButton>
+  <MainButton color="red">Articles</MainButton>
+  <MainButton color="yellow">About</MainButton>
+</Base>

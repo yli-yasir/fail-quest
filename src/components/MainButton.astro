@@ -1,0 +1,20 @@
+---
+interface Props {
+    color: "red" | "blue" | "green" | "yellow";
+    children: string;
+}
+
+const { color } = Astro.props;
+const colorClasses = {
+    red: "bg-red-dark border-red",
+    blue: "bg-blue-dark border-blue",
+    yellow: "bg-yellow-dark border-yellow",
+    green: "bg-green-dark border-green",
+};
+---
+
+<button
+    class={`${colorClasses[color]} border-8 text-3xl py-4 px-8 shadow-md rounded-full text-white`}
+>
+    <slot />
+</button>
