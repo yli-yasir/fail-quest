@@ -19,7 +19,9 @@ import Logo from "../components/Logo.astro";
       }
     </style>
   </head>
-  <body class="flex flex-col items-center justify-center p-4 bg-gray">
+  <body
+    class="flex flex-col items-center justify-center p-4 bg-[url('/assets/main-background.gif')] bg-cover bg-no-repeat"
+  >
     <Logo />
     <slot />
   </body>

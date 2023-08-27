@@ -2,9 +2,10 @@
 interface Props {
     color: "red" | "blue" | "green" | "yellow";
     children: string;
+    class: string;
 }
 
-const { color } = Astro.props;
+const { color, class: passedClass } = Astro.props;
 const colorClasses = {
     red: "bg-red-dark border-red",
     blue: "bg-blue-dark border-blue",
@@ -14,7 +15,50 @@ const colorClasses = {
 ---
 
 <button
-    class={`${colorClasses[color]} border-8 text-3xl py-4 px-8 shadow-md rounded-full text-white`}
+    class={`${colorClasses[color]} border-8 text-3xl py-4 px-8 shadow-md rounded-full text-white ${passedClass}`}
 >
     <slot />
 </button>
+<script>
+    // import * as THREE from "three";
+    // import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
+
+    // const scene = new THREE.Scene();
+    // const camera = new THREE.PerspectiveCamera(75, 16 / 9, 0.1, 1000);
+
+    // const renderer = new THREE.WebGLRenderer();
+    // renderer.setClearColor(0x000000, 0);
+    // renderer.setSize(500, 250);
+    // document.querySelector("#container")!.appendChild(renderer.domElement);
+
+    // camera.position.z = 5;
+    // const directionalLight = new THREE.DirectionalLight(0xffffff, 5); // Color and intensity
+    // directionalLight.position.set(1, 1, 1); // Set the light's position
+    // scene.add(directionalLight);
+
+    // const loader = new GLTFLoader();
+
+    // let model: THREE.Group | undefined;
+    // loader.load(
+    //     "/a.glb",
+    //     function (gltf) {
+    //         model = gltf.scene;
+    //         model.scale.set(2, 2, 2); // This scales the object by a factor of 2 in all three dimensions (x, y, z)
+
+    //         scene.add(gltf.scene);
+    //     },
+    //     undefined,
+    //     function (error) {
+    //         console.error(error);
+    //     }
+    // );
+    // function animate() {
+    //     requestAnimationFrame(animate);
+    //     renderer.render(scene, camera);
+    //     if (model) {
+    //         model.rotation.x += 0.01;
+    //         model.rotation.y += 0.01;
+    //     }
+    // }
+    // animate();
+</script>
