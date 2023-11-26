@@ -1,21 +1,25 @@
 {
   "name": "fail-quest",
-  "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "eleventy",
+    "serve": "eleventy --serve"
   },
-  "dependencies": {
-    "@astrojs/tailwind": "^4.0.0",
-    "astro": "^2.10.14",
-    "tailwindcss": "^3.3.3",
-    "three": "^0.155.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yli-yasir/fail-quest.git"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yli-yasir/fail-quest/issues"
+  },
+  "homepage": "https://github.com/yli-yasir/fail-quest#readme",
   "devDependencies": {
-    "@types/three": "^0.155.1"
+    "@11ty/eleventy": "^2.0.1"
   }
 }
