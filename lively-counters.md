@@ -4,9 +4,7 @@ title: Lively Counters
 date: 2024-27-01
 ---
 
-# Fail Quest
-
-##  Lively Counters
+# Lively Counters
 
 ###  Privacy Policy
 
