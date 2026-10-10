@@ -1,0 +1,10 @@
+name = "fail-quest-worker"
+compatibility_date = "2026-10-10"
+preview_urls = false
+routes = [
+    { pattern = "fail.quest", custom_domain = true },
+    { pattern = "www.fail.quest", custom_domain = true },
+]
+
+[assets]
+directory = "./dist"
