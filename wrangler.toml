@@ -1,4 +1,4 @@
-name = "fail-quest-worker"
+name = "fail-quest"
 compatibility_date = "2026-10-10"
 preview_urls = false
 routes = [
